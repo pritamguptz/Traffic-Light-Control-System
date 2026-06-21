@@ -6,6 +6,7 @@ This project simulates a Traffic Light Control System using Arduino Uno in Prote
 The system automatically controls Red, Yellow, and Green LEDs according to predefined timing intervals to mimic a real traffic signal. An additional LED connected to pin D5 can be manually controlled using an ON/OFF switch.
 The project demonstrates Arduino digital output control, timing operations, LED interfacing, and basic traffic signal automation.
 <hr>
+<image src="Screenshot%202026-06-21%20at%2016.18.48.png">
 <hr>
 ✨ Features
 
