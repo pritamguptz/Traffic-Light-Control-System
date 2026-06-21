@@ -1,0 +1,38 @@
+int red = 2;
+int yellow = 3;
+int green = 4;
+int extraLED = 5;
+
+void setup() {
+pinMode(red, OUTPUT);
+pinMode(yellow, OUTPUT);
+pinMode(green, OUTPUT);
+pinMode(extraLED, OUTPUT);
+
+digitalWrite(extraLED, HIGH); // Always ON
+
+Serial.begin(9600);
+}
+
+void loop() {
+// Red
+Serial.println("RED LIGHT ON");
+digitalWrite(red, HIGH);
+digitalWrite(yellow, LOW);
+digitalWrite(green, LOW);
+delay(3000);
+
+// Green
+Serial.println("GREEN LIGHT ON");
+digitalWrite(red, LOW);
+digitalWrite(yellow, LOW);
+digitalWrite(green, HIGH);
+delay(2000);
+
+// Yellow
+Serial.println("YELLOW LIGHT ON");
+digitalWrite(red, LOW);
+digitalWrite(yellow, HIGH);
+digitalWrite(green, LOW);
+delay(1000);
+}
